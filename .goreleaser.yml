@@ -1,0 +1,6 @@
+builds:
+  - binary: tr-stat-update
+    goos:
+      - linux
+    goarch:
+      - amd64
