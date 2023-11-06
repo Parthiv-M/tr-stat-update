@@ -73,6 +73,6 @@ The script follows a linear workflow as outlined below:
 
 # Further information
 - [Transkribus](https://readcoop.eu/transkribus/) is a platform for the text recognition, image analysis, and structure recognition of historical documents. By means of its web interface and a desktop client, it provides users access to a rich set of features to transcribe texts and train custom handwritten text recognition models.
-- [Wikimedia OCR](https://github.com/wikimedia/wikimedia-ocr) is a web service and interface for providing OCR text from images hosted on MediaWiki wikis. Transkribus is the newest addition to the set of OCR engines available on the tool. [Try it out](ocr.wmcloud.org/) now!
+- [Wikimedia OCR](https://github.com/wikimedia/wikimedia-ocr) is a web service and interface for providing OCR text from images hosted on MediaWiki wikis. Transkribus is the newest addition to the set of OCR engines available on the tool. [Try it out](https://ocr.wmcloud.org/) now!
 
 
