@@ -6,7 +6,7 @@ This Go script automates the process of updating a wiki page with the remaining 
 ## Prerequisites
 - Have [Go](https://go.dev) installed and working on your system. You can follow the [official docs](https://go.dev/doc/install) to do the same.
 - Have an [instance of Mediawiki core](https://www.mediawiki.org/wiki/Manual:Installing_MediaWiki) running on your system so that you have your own local wiki to test with and do not rely on modifying any pages on hosted wikis.
-- Since we are dealing with a `.tab` page, it requires that the [`JsonConfig`](https://www.mediawiki.org/wiki/Extension:JsonConfig) extension be installed as well. Read more about `.tab` pages [here](https://www.mediawiki.org/wiki/Help:Tabular_Data).
+- Since the bot deals with a `.tab` page, it requires that the [`JsonConfig`](https://www.mediawiki.org/wiki/Extension:JsonConfig) extension be installed as well. Read more about `.tab` pages [here](https://www.mediawiki.org/wiki/Help:Tabular_Data).
 ## Clone the repository
 You can clone the repository by running the following command
 ```bash
@@ -19,11 +19,11 @@ The environment variables required to run the script are provided in the [`.exam
 This script is strictly for the [Transkribus account](https://transkribus.eu/) managed by Wikimedia. However, it can be generalised for any Transkribus account. 
 ### How to obtain bot credentials
 - Navigate to `Special:BotPasswords` on your local wiki.
-- You will be prompted to enter details like bot name, and clarify the grants required for the bot. We only require permission to _edit existing pages_.
+- You will be prompted to enter details like bot name, and clarify the grants required for the bot. This bot only requires permission to _edit existing pages_.
 - The subsequent page gives the bot username of the form `username@bot_name` and a password. These are to be mentioned in the `.env` file appropriately.
 
 ## Install packages
-There are no makor dependencies used in the script except for the `godotenv` package to handle the `.env` file. Nevertheless, we will install _all possible packages_ listed in the `go.mod` file using the command `go get .`
+There are no major dependencies used in the script except for the `godotenv` package to handle the `.env` file. Nevertheless, install _all possible packages_ listed in the `go.mod` file using the command `go get .`
 
 Once this is done, you are all set to run the script!
 
@@ -42,7 +42,7 @@ To run the script to update the actual wiki page on Commons, run it as follows
 ```
 go run main.go production
 ```
-This will product a logging statment that says
+This will produce a logging statment that says
 ```console
 Running in production...
 ```
